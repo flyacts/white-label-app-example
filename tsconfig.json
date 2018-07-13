@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "strict": false,
+        "allowSyntheticDefaultImports": true,
+        "declaration": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "dom",
+            "es2017"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "target": "es6",
+        "plugins": [
+            {
+                "name": "tslint-language-service"
+            }
+        ]
+    },
+    "include": [
+        "src/**/*.ts",
+        "scripts/prepare-assets.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ 'about' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<p *ngIf="skin.name === 'cool'">
+    Cooler text.
+</p>
+
+<p *ngIf="skin.name === 'cute'">
+    Süßer Text.
+</p>
+</ion-content>

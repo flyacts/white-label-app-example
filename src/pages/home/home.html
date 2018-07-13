@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'imageSearch' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form>
+    <ion-item>
+      <ion-label stacked>{{ 'searchTerm' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="searchTerm" name="title" (input)="submitSearchDebounced($event)" ion-input></ion-input>
+    </ion-item>
+  </form>
+
+  <ion-list *ngIf="images.length > 0">
+    <ion-item *ngFor="let image of images">
+      <img src="{{ image }}">
+    </ion-item>
+  </ion-list>
+
+</ion-content>
